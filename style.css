@@ -1,0 +1,440 @@
+/* Ajustes Globais */
+:root {
+  --bg: #dfe0e4;
+  --surface: #ffffff;
+  --brand: #230d5f;
+  --muted: #000000;
+  --accent: #079902;
+  --focus: 3px solid #079902;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --bp-tablet: 640px;
+  --bp-desktop: 1024px;
+}
+
+/* Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-family: var(--font-sans); font-size: 16px; background: var(--bg); color: var(--brand); }
+a { color: var(--accent); text-decoration: none; }
+a:focus-visible { outline: var(--focus); outline-offset: 2px; }
+
+/* Header */
+.site-header { background: linear-gradient(90deg, #0ed903, #045f21); border-radius: 0 0 15px 15px; padding: var(--space-sm) var(--space-md); position: sticky; top: 0; z-index: 50; }
+.header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); }
+.logo-container { display: flex; align-items: center; gap: var(--space-sm); }
+.site-title { color: var(--surface); font-size: 1.3rem; }
+.logo-image { width: 40px; height: 40px; border-radius: 20px; /* mantém cantos arredondados */ object-fit: contain; /* garante que a imagem se ajuste sem distorcer */}
+
+/* Barra de pesquisa */
+.search-container { display: flex; justify-content: center; flex: 1; }
+.search-bar { width: 600px; /* largura da barra */ max-width: 100%; /* para não estourar em telas pequenas */ padding: 0.5rem 1rem; border-radius: 25px; border: none; font-size: 1rem; }
+
+/* Layout */
+.layout { display: grid; grid-template-columns: 1fr; gap: var(--space-md); padding: var(--space-md); }
+.sidebar-left { background: var(--surface); padding: var(--space-md); border-radius: 10px; border: 1px solid #cfd8f5;  max-height: 435px; /* define altura máxima */
+overflow-y: auto;  /* permite rolagem se houver mais itens */ }
+.sidebar-left ul { list-style: none; }
+.sidebar-left li + li { margin-top: var(--space-xs); }
+
+/* Material e Ícones no menu lateral */
+.sidebar-left a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  font-weight: 600;
+  color: #000000;
+}
+.sidebar-left a .icon {
+  font-size: 26px;
+  color: #137d05;
+}
+.sidebar-left a:hover { color: var(--accent); }
+
+/* Conteúdo */
+.content { display: flex; flex-direction: column; gap: var(--space-md); }
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  color: #000000;
+}
+.video-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-md); list-style: none; }
+.video-card { background: var(--surface); border-radius: 6px; border: 1px solid #cfd8f5; padding: var(--space-sm); display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; height: 400px;}
+.video-card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+.video-thumb { background: #ffffff; height: 240px; border-radius: 6px; margin-bottom: var(--space-sm); }
+.video-info h3 { font-size: 1rem; margin-bottom: var(--space-xs); }
+.video-info .author { font-size: 0.875rem; color: var(--muted); }
+.video-info .meta { font-size: 0.75rem; color: var(--muted); }
+
+/* Footer */
+.site-footer { background: var(--surface); border-top: 1px solid #cfd8f5; margin-top: var(--space-xl); padding: var(--space-md); }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-links { list-style: none; display: flex; gap: var(--space-sm); margin-top: var(--space-xs); }
+
+/* Video */
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* preenche o espaço mantendo proporção */
+  border-radius: 8px;
+}
+
+.video-categories {
+  display: flex;
+  flex-wrap: wrap;        
+  gap: var(--space-sm);   /* espaço entre botões */
+  margin-bottom: var(--space-md); /* espaço entre categorias e vídeos */
+}
+
+.video-categories .category {
+  padding: 0.5rem 1rem;
+  background: #069a01;    
+  color: #ffffff;         
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;     /* impede quebra do texto do botão */
+  transition: background 0.2s;
+}
+
+.video-categories .category:hover {
+  background: #045f21;     
+}
+
+/* Botão de login */
+.login-button {
+  padding: 0.5rem 1rem;
+  background-color: #069a01;   
+  color: #ffffff;              
+  border-radius: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.login-button:hover {
+  background-color: #058523;  
+}
+
+/* Container dos botões e ícone */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Botão de cadastro */
+.register-button {
+  padding: 0.5rem 1rem;
+  background-color: #069a01;   /* Laranja destaque */
+  color: #ffffff;
+  border-radius: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.register-button:hover {
+  background-color: #058523;  /* Laranja mais escuro */
+}
+
+/* Ícone do carrinho */
+.cart-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  border: 2px solid #069a01;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.cart-icon .material-icons {
+  color: #069a01;
+  font-size: 22px;
+}
+
+.cart-icon:hover {
+  background-color: #058523;
+  transform: scale(1.1);
+}
+
+.cart-icon:hover .material-icons {
+  color: #ffffff;
+}
+
+/* GIF decorativo */
+.sidebar-gif-container {
+  position: absolute;
+  top: calc(400px + 123px); /* altura do menu + espaço */
+  left: var(--space-md);
+  width: 220px;
+}
+.sidebar-gif-container img { width: 100%; height: 345px; border-radius: 8px; display: block; }
+
+
+/* Container das categorias + filtro */
+.categorias-filtro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+/* Mantém a barra de categorias do jeito que está */
+.video-categories {
+  display: flex;
+  flex-wrap: wrap;        
+  gap: var(--space-sm);
+}
+
+/* Filtro Ordenar por ao lado */
+.filtro-ordenar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+
+.filtro-ordenar label {
+  color: #000;
+}
+
+.filtro-ordenar select {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #cfd8f5;
+  background-color: #fff;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.filtro-ordenar select:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 4px rgba(19, 125, 5, 0.2);
+}
+
+/* Responsivo: filtro desce abaixo das categorias em telas pequenas */
+@media (max-width: 640px) {
+  .categorias-filtro-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+}
+
+
+
+/* Espaço entre o final do conteúdo e o footer */
+.site-main {
+  padding-bottom: 10px; 
+}
+
+/* Breakpoints */
+@media (min-width: 640px) {
+  .layout { grid-template-columns: 220px 1fr; }
+  .video-grid { grid-template-columns: repeat(2,1fr); }
+}
+
+@media (min-width: 1024px) {
+  .layout { grid-template-columns: 220px 1fr; }
+  .video-grid { grid-template-columns: repeat(4,1fr); }
+}
+
+
+
+
+
+.add-to-cart {
+  margin-top: 0.5rem;
+  background-color: #069a01;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.add-to-cart .material-icons {
+  font-size: 18px;
+}
+
+.add-to-cart:hover {
+  background-color: #058523;
+  transform: scale(1.05);
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* empurra conteúdo para topo e base */
+}
+
+.video-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* empurra botão para baixo */
+  align-items: center; /* centraliza horizontalmente */
+}
+
+
+
+
+
+
+
+
+/* Container do card e do formulário lado a lado */
+.contact-section {
+  display: flex;
+  gap: 2rem; /* espaço entre os dois blocos */
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: flex-start; /* faz os cards começarem no topo, não esticando */
+  margin-top: 2rem;
+  flex-wrap: wrap; /* para responsivo: empilha em telas pequenas */
+}
+
+.contact-list {
+  list-style: none; /* remove os bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* espaço entre todos os elementos filhos do card */
+  padding: 2rem;
+}
+
+
+/* Largura dos blocos */
+.contact-card,
+.contact-form {
+  background: var(--surface, #f9f9f9);
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  flex: 1; /* cada bloco ocupa metade do espaço disponível */
+  min-width: 280px; /* largura mínima para não quebrar layout */
+  max-width: 400px; /* largura máxima de cada bloco */
+  color: #333;
+}
+
+/* Ícones verdes no contact card */
+.contact-icon {
+  color: #079902;
+}
+
+/* Estilo do formulário */
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #cfd8f5;
+  font-size: 1rem;
+}
+
+/* Botão de enviar */
+.submit-button {
+  padding: 0.6rem 1.2rem;
+  background-color: #069a01;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #058523;
+  transform: scale(1.05);
+}
+
+/* Responsivo: em telas pequenas, empilha os blocos verticalmente */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Faz o body ocupar toda a altura da tela e organizar header, main e footer */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* altura mínima = altura da tela */
+  margin: 0;
+}
+
+/* Faz o main expandir para preencher o espaço disponível */
+.site-main {
+  flex: 1; /* ocupa o espaço restante entre header e footer */
+  padding-bottom: 10px; /* se quiser um pequeno espaçamento antes do footer */
+}
+
+
+/* Imagem abaixo do GIF */
+
+.sidebar-image-container {
+  position: absolute; /* ou relative se quiser que fique dentro do fluxo */
+  top: calc(400px + 132px + 345px + 10px); /* soma da altura do menu + espaço + GIF + margem */
+  left: var(--space-md);
+  width: 220px; /* mesma largura do menu lateral */
+}
+
+.sidebar-image-container img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.3s, opacity 0.3s; /* animação suave */
+}
+
+.sidebar-image-container a:hover img {
+  transform: scale(1.05);  /* aumenta levemente ao passar o mouse */
+  opacity: 0.9;            /* efeito de leve transparência */
+}
+
