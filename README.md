@@ -1,4 +1,4 @@
-# Numismática Goiânia — Loja de Colecionáveis Online 🪙
+# Numismática Goiânia — Loja de Colecionáveis Online 🪙 (Projeto Integrador Parte 1)
 
 ## Índice
 
@@ -176,8 +176,12 @@ Estas funcionalidades e aprimoramentos permitirão ampliar a usabilidade e a pro
 
 ## Link do Protótipo no Figma
 
+
+
 O protótipo detalhado do site pode ser acessado pelo link abaixo, permitindo visualizar a navegação e interatividade planejadas:
 
 [Acesse o Protótipo no Figma 👈](https://www.figma.com/design/eldaeelMQH3L76bBz9QAWT/Projeto-Integrador-Front-End?node-id=0-1&t=7ChOfYA4VOgfjMb1-1)
+
+# Numismática Goiânia — Loja de Colecionáveis Online 🪙 (Projeto Integrador Parte 2)
 
 
