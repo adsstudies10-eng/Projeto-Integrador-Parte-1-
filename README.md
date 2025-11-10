@@ -200,7 +200,7 @@ O protótipo detalhado do site pode ser acessado pelo link abaixo, permitindo vi
 
 - Quais melhorias fariam diferença real para o usuário do pequeno negócio?
 
-## Modularizações adicionadas
+## Componentes reutilizáveis adicionados
 
 -Após percebemos que o header, o footer e o menu lateral eram idênticos em todas as páginas do site, decidimos implementar a reutilização de componentes com o JavaScript, desse modo não há mais a necessidade de alterar estes componentes em cada uma das páginas do site, já que ao alterar a semântica no arquivo do componente (footer.html, header.html, nav.html) todas as páginas já recebem a atualização.
 
