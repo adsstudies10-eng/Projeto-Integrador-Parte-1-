@@ -212,7 +212,7 @@ O protótipo detalhado do site pode ser acessado pelo link abaixo, permitindo vi
 
 ## Ajustes realizados após Lighthouse
 
--Segundo a auditoria do Lighthouse o site apresenta nota 57 no quesito perfomance, isto se deve ao grande volume de imagens presentes na pasta img. Para melhorar a perfomance do site, as imagens tiveram os seus tamanhos reduzidos.
+- Segundo a auditoria do Lighthouse o site apresenta nota 57 no quesito perfomance, isto se deve ao grande volume de imagens presentes na pasta img. Para melhorar a perfomance do site, as imagens tiveram os seus tamanhos reduzidos.
 
 - Os requisitos de Acessibilidade, Melhores Práticas receberam 96 pontos e SEO recebeu 91 pontos.
   
