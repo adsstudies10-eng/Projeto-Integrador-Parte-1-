@@ -182,6 +182,7 @@ O protótipo detalhado do site pode ser acessado pelo link abaixo, permitindo vi
 
 [Acesse o Protótipo no Figma 👈](https://www.figma.com/design/eldaeelMQH3L76bBz9QAWT/Projeto-Integrador-Front-End?node-id=0-1&t=7ChOfYA4VOgfjMb1-1)
 
+
 # Numismática Goiânia — Loja de Colecionáveis Online 🪙 (Projeto Integrador Parte 2)
 
 ## Observações Iniciais
@@ -198,5 +199,34 @@ O protótipo detalhado do site pode ser acessado pelo link abaixo, permitindo vi
 - Onde o layout "quebra" ou fica estranho?
 
 - Quais melhorias fariam diferença real para o usuário do pequeno negócio?
+
+## Interações adicionadas
+
+- Foi adicionado o botão de "Voltar ao Topo" no footer da página para facilitar a navegação do usuário, uma vez que o mesmo não precisará de rolar até o início para voltar ao topo da página, bastando apenas clicar no novo botão adicionado.
+
+- Foram adicionados efeitos de hover mais elaborados para deixar a página mais interativa e sofisticada visualmente.
+
+## Ajustes realizados após Lighthouse
+
+-Segundo a auditoria do Lighthouse o site apresenta nota 57 no quesito perfomance, isto se deve ao grande volume de imagens presentes na pasta img. Para melhorar a perfomance do site, as imagens tiveram os seus tamanhos reduzidos.
+
+- Os requisitos de Acessibilidade, Melhores Práticas receberam 96 pontos e SEO recebeu 91 pontos.
+  
+## Layout em Diferentes Telas
+
+- O layout se adapta bem os dispostivos (Mobile, Tablet, Desktop), as imagens redimensionam corretamente, os textos ficam legíveis, o menu funciona perfeitamente e os espaçamentos são adequados em todos os dispositivos.
+
+- Os breakpoints do site estão devidamente ajustados.
+
+## Integrações Externas
+
+- O negócio não conta com endereço físico , por isso não foi adicionada a localização do Google Maps.
+
+- O site conta com Botão de WhatsApp que cria um link direto para o WhatsApp do negócio.
+
+- O site conta com Botão de Instagram que abre a página oficial do negócio no Instagram.
+
+## Plano de Melhorias
+
 
   
