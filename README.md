@@ -184,4 +184,19 @@ O protótipo detalhado do site pode ser acessado pelo link abaixo, permitindo vi
 
 # Numismática Goiânia — Loja de Colecionáveis Online 🪙 (Projeto Integrador Parte 2)
 
+## Observações Iniciais
 
+- O que já está funcionando bem?
+
+  O design do site, as disposições dos cards, a acessibilidade, os formulários, os links, os botões e a organização do site como um todo já estão em um nível satifastório, porém ainda há espaço para melhorias pontuais.
+  
+- Quais elementos HTML já repetem em várias páginas?
+
+  O cabeçalho (header), o menu de navegação (nav) e o rodapé (footer) são idênticos em todas as páginas do site. Já os cards de produtos seguem a mesma formatação   em todas as páginas de venda, diferenciando-se apenas quanto as informações e imagens especifícas de cada produto.
+  A página "Fale conosco" é a que mais se difere das outras, pois apresenta um card de contatos e um card de formulário com opção de lista.
+  
+- Onde o layout "quebra" ou fica estranho?
+
+- Quais melhorias fariam diferença real para o usuário do pequeno negócio?
+
+  
