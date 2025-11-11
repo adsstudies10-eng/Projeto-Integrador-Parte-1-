@@ -215,7 +215,7 @@ O protótipo detalhado do site pode ser acessado pelo link abaixo, permitindo vi
 
 ## Interações adicionadas
 
-- Foi adicionado o botão de "Voltar ao Topo" no footer da página para facilitar a navegação do usuário, uma vez que o mesmo não precisará de rolar até o início para voltar ao topo da página, bastando apenas clicar no novo botão adicionado.
+- Foi adicionado o botão de "Voltar ao Topo" no footer da página para facilitar a navegação do usuário, uma vez que o mesmo não precisará rolar até o início para voltar ao topo da página, bastando apenas clicar no novo botão adicionado.
 
 - Foram adicionados efeitos de hover mais elaborados para deixar a página mais interativa e sofisticada visualmente.
 
@@ -223,11 +223,11 @@ O protótipo detalhado do site pode ser acessado pelo link abaixo, permitindo vi
 
 - Segundo a auditoria do Lighthouse o site apresenta nota 57 no quesito perfomance, isto se deve ao grande volume de imagens presentes na pasta img. Para melhorar a perfomance do site, as imagens tiveram os seus tamanhos reduzidos.
 
-- Os requisitos de Acessibilidade, Melhores Práticas receberam 96 pontos e SEO recebeu 91 pontos.
+- Os requisitos de Acessibilidade e Melhores Práticas receberam 96 pontos e SEO recebeu 91 pontos.
   
 ## Layout em Diferentes Telas
 
-- O layout se adapta bem os dispostivos (Mobile, Tablet, Desktop), as imagens redimensionam corretamente, os textos ficam legíveis, o menu funciona perfeitamente e os espaçamentos são adequados em todos os dispositivos.
+- O layout se adapta bem nos dispostivos (Mobile, Tablet, Desktop), as imagens redimensionam corretamente, os textos ficam legíveis, o menu funciona perfeitamente e os espaçamentos são adequados em todos os dispositivos.
 
 - Os breakpoints do site estão devidamente ajustados.
 
