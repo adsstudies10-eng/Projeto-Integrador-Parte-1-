@@ -232,5 +232,10 @@ O protótipo detalhado do site pode ser acessado pelo link abaixo, permitindo vi
 
 ## Plano de Melhorias
 
+- Pretendemos aprimorar a responsividade da página “Fale Conosco”, que ainda não se adapta completamente a diferentes tamanhos de tela como as demais seções do site.
+  
+- Almejamos aumentar a modularização do projeto para melhorar a nota de desempenho no Lighthouse.
+
+- Melhorar a organização do código, inserindo novos comentários que facilitem futuras manutenções.
 
   
