@@ -202,7 +202,12 @@ O protótipo detalhado do site pode ser acessado pelo link abaixo, permitindo vi
   
 - Onde o layout "quebra" ou fica estranho?
 
+  O layout do site se mantém estável e visualmente equilibrado em diferentes tamanhos de tela, sem apresentar quebras ou distorções perceptíveis. A estrutura foi    organizada de forma coerente, garantindo boa legibilidade e navegação fluida em todas as resoluções.
+
 - Quais melhorias fariam diferença real para o usuário do pequeno negócio?
+
+  Algumas melhorias que fariam diferença real para o usuário incluem o aprimoramento da responsividade em dispositivos móveis e a otimização do tempo de
+  carregamento das páginas, essas melhorias tornariam a navegação mais ágil, intuitiva e agradável.
 
 ## Componentes reutilizáveis adicionados
 
